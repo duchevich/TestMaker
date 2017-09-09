@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+	<fieldset>
+		<field name="idAnswer" type="hidden"></field>
+		<field name="idQuestion" type="hidden"></field>
+		<field name="textAnswer" type="textarea"  label="COM_TESTMAKER_ANSWERS_ADD_TEXT_FIELD" description="COM_TESTMAKER_ANSWERS_ADD_TEXT_FIELD" filter="raw" buttons="true" required="true"/>
+
+		<field name="state" type="list" default="1" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="chzn-color-state">
+			<option value="0">JUNPUBLISHED</option>
+			<option value="1">JPUBLISHED</option>
+		</field>
+
+	</fieldset>
+	
+</form>

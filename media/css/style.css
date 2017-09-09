@@ -1,0 +1,39 @@
+.tm-block{
+	padding: 20px;
+	min-height: 70vh;
+}
+.tm-block p{
+	padding: 0;
+	margin: 0;
+}
+.tm-block h1{
+	margin-bottom: 50px;
+}
+.tm-block h1,
+.tests-links{
+	text-align: center;
+}
+.tm-block .radio{
+	//padding: 10px;
+}
+.tm-block .text{
+	padding: 10px;
+}
+.radio input[type="radio"]{
+	margin-left: 0!important;
+	display: block;
+}
+.start{
+	text-align: center;
+	display: block!important;
+	margin: 0 auto;
+	width: 200px;
+}
+.quest-block{
+	min-height: 30vh;
+}
+.next{
+	text-align: center;
+	margin: 0 auto;
+	width: 200px;
+}

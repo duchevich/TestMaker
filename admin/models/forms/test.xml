@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+	<fieldset name="basic">
+		<field name="idTest" type="hidden"></field>
+
+		<field name="name" type="textarea" default="" label="COM_TESTMAKER_TEST_FIELD_TITLE_LABEL" deskription="COM_TESTMAKER_TEST_FIELD_TITLE_DESCRIPTION" required="true"></field>
+
+		<field name="alias" type="text" default="" label="COM_TESTMAKER_TEST_FIELD_ALIAS_LABEL" deskription="COM_TESTMAKER_TEST_FIELD_ALIAS_DESCRIPTION" required="true"></field>
+
+		<field name="idCategory" type="questtestfield" default="0" label="COM_TESTMAKER_TEST_FIELD_TITLE_CATEGORY" filter="raw"/>
+
+		<field name="state" type="list" default="1" label="JSTATUS" deskription="JFIELD_PUBLISHED_DESC" class="chzn-color-state">
+			<option value="0">JUNPUBLISHED</option>
+			<option value="1">JPUBLISHED</option>
+		</field>
+
+	</fieldset>
+	
+</form>

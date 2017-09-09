@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_TESTMAKER_SEARCH_IN_TITLE"
+			hint="JSEARCH_FILTER"
+			class="js-stools-search-string"
+		/>
+		<field
+			name="category"
+			type="questtestfield"
+			label="COM_TESTMAKER_TEST_FILTER_CATEGORY"
+			option="category"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">COM_TESTMAKER_QUESTIONS_TEST</option>
+		</field>
+		<field
+		    name="state"
+		    type="list"
+		    label="JSTATUS"
+		    description="JFIELD_PUBLISHED_DESC"
+		    size="1"
+		    default="" onchange="this.form.submit();"
+		>
+		    <option value="2">JOPTION_SELECT_PUBLISHED</option>
+		    <option value="1">JPUBLISHED</option>
+		    <option value="0">JUNPUBLISHED</option>
+		</field>
+	</fields>	
+		
+		
+	<fields name="list">
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_CONTENT_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+		
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_CONTENT_LIST_FULL_ORDERING"
+			description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="id DESC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="state ASC">JSTATUS_ASC</option>
+			<option value="state DESC">JSTATUS_DESC</option>
+			<option value="name ASC">JGLOBAL_TITLE_ASC</option>
+			<option value="name DESC">JGLOBAL_TITLE_DESC</option>
+			<option value="id ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="id DESC">JGRID_HEADING_ID_DESC</option>
+		
+		</field>
+	</fields>
+	
+</form>

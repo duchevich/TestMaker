@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="component" version="3.0" method="upgrade">
+
+<name>TestMaker</name>
+<creationDate>17.08.2017</creationDate>
+<author>Duchevich</author>
+<authorEmail>duchevich274@gmail.com</authorEmail>
+<authorUrl>http://www.dwebdev.in.ua/</authorUrl>
+<copyright>Copyright info</copyright>
+<license>License info</license>
+<version>1.0.0</version>
+<description>COM_TESTMAKER_XML_DESCRIPTION</description>
+
+
+<scriptfile>install.php</scriptfile>
+
+<install>
+	<sql>
+		<file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+	</sql>
+</install>
+
+<uninstall>
+	<sql>
+		<file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+	</sql>
+</uninstall>
+
+<update>
+	<schemas>
+		<schemapath type="mysql">sql/updates/mysql</schemapath>
+	</schemas>
+</update>
+
+<languages folder="site">
+	<language tag="ru-RU">language/ru-RU/ru-RU.com_testmaker.ini</language>
+</languages>
+
+<files folder="site">
+	
+	<folder>assets</folder>
+	<folder>controllers</folder>
+	<folder>helpers</folder>
+	<folder>language</folder>
+	<folder>models</folder>
+	<folder>tables</folder>
+	<folder>views</folder>
+	
+	<filename>controller.php</filename>
+	<filename>testmaker.php</filename>
+	<filename>index.html</filename>
+	
+</files>
+
+<media destination="com_testmaker" folder="media">
+	<folder>css</folder>
+	<folder>fonts</folder>
+	<folder>images</folder>
+	<folder>js</folder>
+
+	<filename>index.html</filename>
+</media>	
+
+<administration>
+	
+	<menu link="option=com_testmaker">COM_TESTMAKER_MENU_NAME</menu>
+	
+	<submenu>
+	    <menu view="questions">COM_TESTMAKER_MENU_QUESTIONS</menu>
+		<menu view="tests">COM_TESTMAKER_MENU_TESTS</menu>
+		<menu view="categories">COM_TESTMAKER_MENU_CATEGORIES</menu>
+	</submenu>
+	
+	<files folder="admin">
+		
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>edit</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>layouts</folder>
+		<folder>models</folder>
+		<folder>sql</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+		
+		<filename>controller.php</filename>
+		<filename>testmaker.php</filename>
+		<filename>index.html</filename>
+		<filename>access.xml</filename>
+		<filename>config.xml</filename>
+		
+	</files>
+	
+	<languages folder="admin">
+		<language tag="ru-RU">language/ru-RU/ru-RU.com_testmaker.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.com_testmaker.sys.ini</language>
+	</languages>
+	
+</administration>
+	
+</extension>
